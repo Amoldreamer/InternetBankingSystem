@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding:0;
+}
+    html, body{
+        height:100%;
+            }
+    header{
+        background: rgb(178,162,96);
+        height:100px;
+        }
+    #container {
+        min-height: 85%;
+        }
+
+    #main {
+        overflow: auto;
+        padding-bottom: 100px;
+        }
+    footer{
+        background-color: rgb(178,162,96);
+        height:100px;
+        margin-top: -100px;
+        position:relative;
+        clear: both;
+        }
+    .header{
+       float:right;
+       margin-top: 50px;
+        }
+    a{
+       text-decoration: none;
+       color:white;
+       padding:10px;
+        }
+
+   .dropdown {
+       height: 10vh;
+       justify-content: space-around;
+       align-items: center;
+       margin: auto;
+       position: relative;
+       align-items: center;
+       display:flex;
+   }
+
+   .accounts ul {
+       position: absolute;
+       background: orange;
+       margin-top: 10px;
+       justify-content: space-around;
+       align-items: center;
+       flex-direction: column;
+       list-style: none;
+       border-radius: 5px;
+       opacity: 0;
+       /* pointer-events: none; */
+       transform: translateY(-10px);
+       transition:all 0.4s ease;
+   }
+
+   .accounts a {
+       color: black;
+   }
+
+   .accounts button{
+       background: none;
+       border: none;
+       color: white;
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   .accounts li {
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .accounts li:hover {
+       background-color: white;
+   }
+
+   .accounts button:hover {
+       color: orange;
+   }
+
+   .accounts button:focus + ul {
+       opacity: 1;
+       pointer-events: all;
+       transform: translateY(0px);
+   }
+
+   #alert {
+       background-color: red;
+   }
